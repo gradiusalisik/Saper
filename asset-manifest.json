@@ -1,13 +1,13 @@
 {
-  "main.css": "/saper/static/css/main.ad06291b.chunk.css",
-  "main.js": "/saper/static/js/main.1af79ab4.chunk.js",
-  "main.js.map": "/saper/static/js/main.1af79ab4.chunk.js.map",
-  "runtime~main.js": "/saper/static/js/runtime~main.921daa08.js",
-  "runtime~main.js.map": "/saper/static/js/runtime~main.921daa08.js.map",
-  "static/js/2.227df01c.chunk.js": "/saper/static/js/2.227df01c.chunk.js",
-  "static/js/2.227df01c.chunk.js.map": "/saper/static/js/2.227df01c.chunk.js.map",
-  "index.html": "/saper/index.html",
-  "precache-manifest.3358c61828bc0444f453a2e68b4a0a0e.js": "/saper/precache-manifest.3358c61828bc0444f453a2e68b4a0a0e.js",
-  "service-worker.js": "/saper/service-worker.js",
-  "static/css/main.ad06291b.chunk.css.map": "/saper/static/css/main.ad06291b.chunk.css.map"
+  "main.css": "/Saper/static/css/main.ad06291b.chunk.css",
+  "main.js": "/Saper/static/js/main.8a35e7e3.chunk.js",
+  "main.js.map": "/Saper/static/js/main.8a35e7e3.chunk.js.map",
+  "runtime~main.js": "/Saper/static/js/runtime~main.8b964d28.js",
+  "runtime~main.js.map": "/Saper/static/js/runtime~main.8b964d28.js.map",
+  "static/js/2.227df01c.chunk.js": "/Saper/static/js/2.227df01c.chunk.js",
+  "static/js/2.227df01c.chunk.js.map": "/Saper/static/js/2.227df01c.chunk.js.map",
+  "index.html": "/Saper/index.html",
+  "precache-manifest.ecfb4d31adc1d0036faf78e41b64eae7.js": "/Saper/precache-manifest.ecfb4d31adc1d0036faf78e41b64eae7.js",
+  "service-worker.js": "/Saper/service-worker.js",
+  "static/css/main.ad06291b.chunk.css.map": "/Saper/static/css/main.ad06291b.chunk.css.map"
 }
