@@ -1,0 +1,207 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.game {
+  padding: 4px;
+  background-color: #f5f5f5;
+  background-image: linear-gradient(to top,#f5f5f5,#ddd);
+  background-repeat: repeat-x;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 0 #fff;
+}
+
+.grid {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 198px;
+  height: 198px;
+}
+
+.stub  {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: transparent;
+}
+
+.grid_gameOver .stub {
+  display: block;
+}
+
+.cell {
+  position: relative;
+  margin: 1px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 2px;
+  box-shadow: inset 0px 0px 5px 17px rgba(189,182,172,1);
+}
+
+.cell::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: '';
+  display: none;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
+  background-size: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cell_isOpen {
+  box-shadow: none;
+  background-color: #C9B89F;
+  border: 1px solid #857A69;
+}
+
+.cell_isOpen.cell_question::before {
+  display: none;
+}
+
+.cell_isOpen::before {
+  display: block;
+}
+
+.cell_flag::before {
+  display: block;
+  background-image: url(./flag.png);
+}
+
+.cell_question::before {
+  display: block;
+  background-image: url(./question.png);
+}
+
+.cell_isBomb {
+  background-color: plum;
+}
+
+.cell_isBomb::before {
+  background-image: url('./bomb.png');
+}
+
+
+.cell_number_1::before {
+  content: '1';
+  color: blue;
+}
+.cell_number_2::before {
+  content: '2';
+  color: green;
+}
+.cell_number_3::before {
+  content: '3';
+  color: red;
+}
+.cell_number_4::before {
+  content: '4';
+  color: purple;
+}
+.cell_number_5::before {
+  content: '5';
+  color: yellowgreen
+}
+.cell_number_6::before {
+  content: '6';
+  color: fuchsia;
+}
+.cell_number_7::before {
+  content: '7';
+  color: blueviolet;
+}
+.cell_number_8::before {
+  content: '8';
+  color: goldenrod;
+}
+.cell_number_9::before {
+  content: '9';
+  color: royalblue;
+}
+
+.header {
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
+  overflow: hidden;
+}
+
+.header__bomb {
+  display: flex;
+  align-items: center;
+}
+
+.header__flag {
+  height: 32px;
+  width: 32px;
+  background: url(./flag.png) 0 no-repeat;
+}
+
+.header__timer-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.header__timer {
+  display: block;
+}
+
+.header__timer-icon {
+  margin-left: 8px;
+  width: 24px;
+  height: 24px;
+  background-image: url('./time.png');
+  background-size: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  height: 24px;
+}
+
+.footer__begin {
+  display: flex;
+  align-items: center;
+}
+
+.footer__restart {
+  padding: 0;
+  margin-left: 5px;
+  width: 24px;
+  height: 24px;
+  background-image: url('./restart.png');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
