@@ -181,8 +181,11 @@ class App extends Component {
     this.openCell(cell);
     for (let row = cell.row - 1; row <= cell.row + 1; row += 1) {
       for (let col = cell.col - 1; col <= cell.col + 1; col += 1) {
+        console.log(row, col, 'array');
         if (this.inRange({ row, col })) {
+          console.log(row, col, 'insideRange')
           if (!this.checkIsOpen({ row, col })) {
+            console.log(row, col, 'notOpen CELL')
             this.openBox(grid[row][col]);
           }
         }

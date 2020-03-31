@@ -2,7 +2,7 @@
   "name": "myapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gradiusalisik.github.io/saper",
+  "homepage": "https://gradiusalisik.github.io/Saper",
   "dependencies": {
     "classnames": "^2.2.6",
     "gh-pages": "^2.0.1",
